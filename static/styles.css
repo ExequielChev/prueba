@@ -1,0 +1,87 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #0871e9;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0871e9;
+}
+
+.result {
+    margin-top: 20px;
+    color: #333;
+}
+
+
+
+/* En styles.css */
+img {
+    width: 150px; /* Ajusta el ancho según tus necesidades */
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* En static/styles.css */
+.mensaje-ejecucion {
+    display: none;
+    background-color: #4CAF50; /* Color de fondo verde (puedes cambiarlo) */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+.mensaje-despues-de-pausa {
+    display: none;
+    background-color: #ffc107;
+    color: #333;
+    padding: 10px;
+    margin-top: 10px;
+}
