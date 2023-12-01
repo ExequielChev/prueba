@@ -1,44 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.6 on win32)" generated="20231129 11:43:12.063" rpa="true" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.6 on win32)" generated="20231201 16:50:26.641" rpa="true" schemaversion="4">
 <suite id="s1" name="Tasks" source="C:\Users\zcheveste\Documents\Robocop_project\Robot_CompromisoAysa\tasks.robot">
 <test id="s1-t1" name="Open Major desktop application and play a app" line="21">
 <kw name="Open the Major.Exe desktop application">
 <kw name="Open Workbook" library="RPA.Excel.Files">
 <arg>${diccionario}</arg>
 <doc>Open an existing Excel workbook.</doc>
-<msg timestamp="20231129 11:43:12.594" level="INFO">Opened workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x0000022AA03C0510&gt;</msg>
-<status status="PASS" starttime="20231129 11:43:12.581" endtime="20231129 11:43:12.594"/>
+<msg timestamp="20231201 16:50:27.112" level="INFO">Opened workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x00000160C759D790&gt;</msg>
+<status status="PASS" starttime="20231201 16:50:27.110" endtime="20231201 16:50:27.112"/>
 </kw>
 <kw name="Get Cell Value" library="RPA.Excel.Files">
 <var>${usuario}</var>
 <arg>9</arg>
 <arg>B</arg>
 <doc>Get a cell value in the given worksheet.</doc>
-<msg timestamp="20231129 11:43:12.594" level="INFO">${usuario} = KTURKI</msg>
-<status status="PASS" starttime="20231129 11:43:12.594" endtime="20231129 11:43:12.594"/>
+<msg timestamp="20231201 16:50:27.112" level="INFO">${usuario} = KTURKI</msg>
+<status status="PASS" starttime="20231201 16:50:27.112" endtime="20231201 16:50:27.112"/>
 </kw>
 <kw name="Get Cell Value" library="RPA.Excel.Files">
 <var>${contraseña}</var>
 <arg>10</arg>
 <arg>B</arg>
 <doc>Get a cell value in the given worksheet.</doc>
-<msg timestamp="20231129 11:43:12.594" level="INFO">${contraseña} = 37792827</msg>
-<status status="PASS" starttime="20231129 11:43:12.594" endtime="20231129 11:43:12.594"/>
+<msg timestamp="20231201 16:50:27.112" level="INFO">${contraseña} = 37792827</msg>
+<status status="PASS" starttime="20231201 16:50:27.112" endtime="20231201 16:50:27.112"/>
 </kw>
 <kw name="Windows Run" library="RPA.Windows">
 <arg>Major.Exe</arg>
 <tag>window</tag>
 <doc>Use Windows Run window to launch an application.</doc>
-<msg timestamp="20231129 11:43:12.594" level="INFO">Sending keys '{Win}r' to element: &lt;module 'uiautomation' from 'C:\\Users\\zcheveste\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<msg timestamp="20231129 11:43:13.139" level="INFO">Sending keys 'Major.Exe' to element: &lt;module 'uiautomation' from 'C:\\Users\\zcheveste\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<msg timestamp="20231129 11:43:13.737" level="INFO">Sending keys '{Enter}' to element: &lt;module 'uiautomation' from 'C:\\Users\\zcheveste\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
-<status status="PASS" starttime="20231129 11:43:12.594" endtime="20231129 11:43:17.259"/>
+<msg timestamp="20231201 16:50:27.112" level="INFO">Sending keys '{Win}r' to element: &lt;module 'uiautomation' from 'C:\\Users\\zcheveste\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20231201 16:50:27.659" level="INFO">Sending keys 'Major.Exe' to element: &lt;module 'uiautomation' from 'C:\\Users\\zcheveste\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20231201 16:50:28.255" level="INFO">Sending keys '{Enter}' to element: &lt;module 'uiautomation' from 'C:\\Users\\zcheveste\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20231201 16:50:27.112" endtime="20231201 16:50:31.777"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231129 11:43:22.260" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231129 11:43:17.259" endtime="20231129 11:43:22.260"/>
+<status status="FAIL" starttime="20231201 16:50:31.777" endtime="20231201 16:50:32.041"/>
 </kw>
 <kw name="Click" library="RPA.Windows">
 <arg>id:25</arg>
@@ -46,16 +45,12 @@
 <tag>action</tag>
 <tag>mouse</tag>
 <doc>Mouse click on element matching given locator.</doc>
-<msg timestamp="20231129 11:43:22.260" level="INFO">Locator timeout set to: 60.000000</msg>
-<msg timestamp="20231129 11:43:22.260" level="INFO">Getting element with locator: id:25</msg>
-<msg timestamp="20231129 11:43:22.359" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000022A90B18610&gt;, locator=None, name='Escritorio 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1366, top=0, bottom=768, width=1366, height=768, xcenter=683, ycenter=384)</msg>
-<msg timestamp="20231129 11:43:22.359" level="INFO">Locator 'id:25' produced matcher: MatchObject(locators=[('AutomationId', '25', 0)], _classes=set(), max_level=0)</msg>
-<status status="FAIL" starttime="20231129 11:43:22.260" endtime="20231129 11:43:41.761"/>
+<status status="NOT RUN" starttime="20231201 16:50:32.041" endtime="20231201 16:50:32.048"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>40s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20231129 11:43:41.761" endtime="20231129 11:43:41.761"/>
+<status status="NOT RUN" starttime="20231201 16:50:32.048" endtime="20231201 16:50:32.048"/>
 </kw>
 <kw name="Click" library="RPA.Windows">
 <arg>id:6</arg>
@@ -63,7 +58,7 @@
 <tag>action</tag>
 <tag>mouse</tag>
 <doc>Mouse click on element matching given locator.</doc>
-<status status="NOT RUN" starttime="20231129 11:43:41.761" endtime="20231129 11:43:41.761"/>
+<status status="NOT RUN" starttime="20231201 16:50:32.048" endtime="20231201 16:50:32.048"/>
 </kw>
 <kw name="Send Keys" library="RPA.Windows">
 <arg>keys=${usuario}</arg>
@@ -71,14 +66,14 @@
 <tag>keyboard</tag>
 <doc>Send keys to desktop, current window or to Control element
 defined by given locator.</doc>
-<status status="NOT RUN" starttime="20231129 11:43:41.761" endtime="20231129 11:43:41.761"/>
+<status status="NOT RUN" starttime="20231201 16:50:32.048" endtime="20231201 16:50:32.048"/>
 </kw>
 <kw name="Click" library="RPA.Windows">
 <arg>id:5</arg>
 <tag>action</tag>
 <tag>mouse</tag>
 <doc>Mouse click on element matching given locator.</doc>
-<status status="NOT RUN" starttime="20231129 11:43:41.761" endtime="20231129 11:43:41.761"/>
+<status status="NOT RUN" starttime="20231201 16:50:32.048" endtime="20231201 16:50:32.048"/>
 </kw>
 <kw name="Send Keys" library="RPA.Windows">
 <arg>keys=${contraseña}</arg>
@@ -86,29 +81,29 @@ defined by given locator.</doc>
 <tag>keyboard</tag>
 <doc>Send keys to desktop, current window or to Control element
 defined by given locator.</doc>
-<status status="NOT RUN" starttime="20231129 11:43:41.761" endtime="20231129 11:43:41.761"/>
+<status status="NOT RUN" starttime="20231201 16:50:32.048" endtime="20231201 16:50:32.048"/>
 </kw>
 <kw name="Click" library="RPA.Windows">
 <arg>id:4</arg>
 <tag>action</tag>
 <tag>mouse</tag>
 <doc>Mouse click on element matching given locator.</doc>
-<status status="NOT RUN" starttime="20231129 11:43:41.761" endtime="20231129 11:43:41.761"/>
+<status status="NOT RUN" starttime="20231201 16:50:32.048" endtime="20231201 16:50:32.048"/>
 </kw>
-<status status="FAIL" starttime="20231129 11:43:12.581" endtime="20231129 11:43:41.761"/>
+<status status="FAIL" starttime="20231201 16:50:27.109" endtime="20231201 16:50:32.048"/>
 </kw>
 <kw name="Creacion de Carpetas">
-<status status="NOT RUN" starttime="20231129 11:43:41.761" endtime="20231129 11:43:41.761"/>
+<status status="NOT RUN" starttime="20231201 16:50:32.048" endtime="20231201 16:50:32.048"/>
 </kw>
 <kw name="Ir a incio de usuario">
-<status status="NOT RUN" starttime="20231129 11:43:41.761" endtime="20231129 11:43:41.761"/>
+<status status="NOT RUN" starttime="20231201 16:50:32.048" endtime="20231201 16:50:32.048"/>
 </kw>
 <kw name="Carga de datos">
-<status status="NOT RUN" starttime="20231129 11:43:41.761" endtime="20231129 11:43:41.761"/>
+<status status="NOT RUN" starttime="20231201 16:50:32.048" endtime="20231201 16:50:32.048"/>
 </kw>
-<status status="FAIL" starttime="20231129 11:43:12.581" endtime="20231129 11:43:41.761">Execution terminated by signal</status>
+<status status="FAIL" starttime="20231201 16:50:27.106" endtime="20231201 16:50:32.048">Execution terminated by signal</status>
 </test>
-<status status="FAIL" starttime="20231129 11:43:12.063" endtime="20231129 11:43:41.761"/>
+<status status="FAIL" starttime="20231201 16:50:26.641" endtime="20231201 16:50:32.048"/>
 </suite>
 <statistics>
 <total>

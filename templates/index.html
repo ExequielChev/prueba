@@ -1,20 +1,20 @@
 <!-- En el head de tu HTML -->
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <img src="{{ url_for('static', filename='muni.png') }}" alt="Imagen">
+    <img src="{{ url_for('static', filename='muni.png') }}" alt="Imagen representativa" class="logo-image">
     <title>Script Runner</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/script.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>ROBOTITOS :D</h1>
-        <form action="/execute" method="post" onsubmit="return ejecutarScript()">
+        <form action="/" method="post" onsubmit="return ejecutarScript()">
             <label for="nombre_script">Seleccionar script:</label>
             <select id="nombre_script" name="nombre_script" required>
                 <option value="ejecutar1">OCR Facturas</option>
@@ -26,11 +26,13 @@
             <button type="button" onclick="cancelarEjecucionScript()">Cancelar/Pausar</button>
             <div id="mensajeDespuesDePausa" class="mensaje-despues-de-pausa">Pausado</div>
         </form>
-
+            <!-- ... Resto del formulario ... -->
+        </form>
         <div id="mensajeEjecucion" style="display: none;">Ejecutando script...</div>
         {% if result %}
         <p class="result {% if 'Error' in result %}error{% else %}success{% endif %}">{{ result }}</p>
         {% endif %} 
     </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
